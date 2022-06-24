@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Signin"
+    android:orientation="vertical"
+    android:background="@color/UiColor">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="30dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:src="@drawable/hosptitle"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:lottie_fileName="welcomeplants.json"
+            app:lottie_autoPlay="true"
+
+            app:lottie_loop="true"/>
+    </RelativeLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical">
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:cardCornerRadius="18dp"
+        android:layout_margin="16dp"
+        app:cardBackgroundColor="#23593A">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Email"
+            android:textColor="@android:color/white"
+            android:textColorHint="#979595"
+            android:inputType="textPersonName"
+            android:background="@android:color/transparent"
+            android:layout_marginStart="22dp"
+            />
+
+    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:cardCornerRadius="18dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardBackgroundColor="#23593A">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Password"
+            android:textColor="@android:color/white"
+            android:textColorHint="#979595"
+            android:inputType="textPersonName"
+            android:background="@android:color/transparent"
+            android:layout_marginStart="22dp"/>
+
+    </com.google.android.material.card.MaterialCardView>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Sign in"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="18dp"
+        android:textSize="24sp"
+        android:layout_marginStart="18dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+
+
+        />
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_gravity="right"
+           android:layout_marginStart="220dp">
+       <ImageView
+           android:id="@+id/signin"
+           android:layout_width="wrap_content"
+           android:layout_height="50dp"
+           android:src="@drawable/rightarrow"
+           android:layout_marginTop="12dp"
+
+           />
+       </LinearLayout>
+   </LinearLayout>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        >
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:padding="2dp"
+            android:src="@drawable/facebooklogin"
+            android:layout_marginEnd="22dp"
+            />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:padding="6dp"
+            android:src="@drawable/googlelogin"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical"
+        android:layout_marginTop="12dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account?"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:textColor="#CDC9C9"/>
+        <TextView
+            android:id="@+id/signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign up"
+            android:textSize="24sp"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+<!--    <TextView-->
+<!--        android:id="@+id/skip"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:text="Skip"-->
+<!--        android:textColor="@android:color/white"-->
+<!--        android:gravity="center"/>-->
+</LinearLayout>
